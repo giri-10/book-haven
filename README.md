@@ -2,4 +2,4 @@
 
 System Design:
 
-![image](https://github.com/user-attachments/assets/92c10688-6e7f-48d4-ab4a-eaffdfd8b75a)
+![architecture](https://github.com/user-attachments/assets/41ccf70c-d04d-4663-a0b3-0f9dd5f1c3b6)
