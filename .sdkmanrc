@@ -1,0 +1,2 @@
+java=21.0.4-tem
+cat ~/.sdkman/etc/config
