@@ -2,6 +2,7 @@ package com.giri.catalog_service.domain;
 
 import com.giri.catalog_service.ApplicationProperties;
 import jakarta.transaction.Transactional;
+import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -35,5 +36,9 @@ public class ProductService {
                 productsPage.isLast(),
                 productsPage.hasNext(),
                 productsPage.hasPrevious());
+    }
+
+    public Optional<Product> getProductsByCode(String code) {
+        return productRepo.findByCode(code).map(ProductMapper::toProduct);
     }
 }
