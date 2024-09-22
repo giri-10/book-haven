@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<dockerImageName>giri19/bookhaven-${project.artifactId}</dockerImageName>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -120,6 +121,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${project.parent.version}</version>
+				<configuration>
+					<image>
+						<name>${dockerImageName}</name>
+					</image>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
