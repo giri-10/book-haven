@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="catalog-service" />
+        <module name="order-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
       <module name="book-haven" options="" />
       <module name="bookhaven" options="" />
       <module name="catalog-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
     </option>
   </component>
 </project>
