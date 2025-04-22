@@ -1,8 +1,8 @@
-package com.sivalabs.bookstore.webapp.web.controllers;
+package com.giri.bookstore.webapp.web.controllers;
 
-import com.sivalabs.bookstore.webapp.clients.catalog.CatalogServiceClient;
-import com.sivalabs.bookstore.webapp.clients.catalog.PagedResult;
-import com.sivalabs.bookstore.webapp.clients.catalog.Product;
+import com.giri.bookstore.webapp.clients.catalog.CatalogServiceClient;
+import com.giri.bookstore.webapp.clients.catalog.PagedResult;
+import com.giri.bookstore.webapp.clients.catalog.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

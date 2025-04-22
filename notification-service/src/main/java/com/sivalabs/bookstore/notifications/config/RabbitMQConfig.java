@@ -1,7 +1,7 @@
-package com.sivalabs.bookstore.notifications.config;
+package com.giri.bookstore.notifications.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sivalabs.bookstore.notifications.ApplicationProperties;
+import com.giri.bookstore.notifications.ApplicationProperties;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;

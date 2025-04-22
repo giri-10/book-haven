@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.notifications.domain.models;
+package com.giri.bookstore.notifications.domain.models;
 
 import java.math.BigDecimal;
 

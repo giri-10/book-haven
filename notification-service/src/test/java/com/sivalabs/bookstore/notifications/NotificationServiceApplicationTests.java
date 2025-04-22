@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.notifications;
+package com.giri.bookstore.notifications;
 
 import org.junit.jupiter.api.Test;
 

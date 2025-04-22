@@ -1,8 +1,8 @@
-package com.sivalabs.bookstore.webapp.clients;
+package com.giri.bookstore.webapp.clients;
 
-import com.sivalabs.bookstore.webapp.ApplicationProperties;
-import com.sivalabs.bookstore.webapp.clients.catalog.CatalogServiceClient;
-import com.sivalabs.bookstore.webapp.clients.orders.OrderServiceClient;
+import com.giri.bookstore.webapp.ApplicationProperties;
+import com.giri.bookstore.webapp.clients.catalog.CatalogServiceClient;
+import com.giri.bookstore.webapp.clients.orders.OrderServiceClient;
 import java.time.Duration;
 import org.springframework.boot.web.client.ClientHttpRequestFactories;
 import org.springframework.boot.web.client.ClientHttpRequestFactorySettings;

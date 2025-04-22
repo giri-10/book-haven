@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.webapp;
+package com.giri.bookstore.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

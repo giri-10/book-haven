@@ -1,10 +1,10 @@
-package com.sivalabs.bookstore.notifications.domain;
+package com.giri.bookstore.notifications.domain;
 
-import com.sivalabs.bookstore.notifications.ApplicationProperties;
-import com.sivalabs.bookstore.notifications.domain.models.OrderCancelledEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderCreatedEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderDeliveredEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderErrorEvent;
+import com.giri.bookstore.notifications.ApplicationProperties;
+import com.giri.bookstore.notifications.domain.models.OrderCancelledEvent;
+import com.giri.bookstore.notifications.domain.models.OrderCreatedEvent;
+import com.giri.bookstore.notifications.domain.models.OrderDeliveredEvent;
+import com.giri.bookstore.notifications.domain.models.OrderErrorEvent;
 import jakarta.mail.internet.MimeMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

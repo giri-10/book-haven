@@ -1,11 +1,11 @@
-package com.sivalabs.bookstore.webapp.web.controllers;
+package com.giri.bookstore.webapp.web.controllers;
 
-import com.sivalabs.bookstore.webapp.clients.orders.CreateOrderRequest;
-import com.sivalabs.bookstore.webapp.clients.orders.OrderConfirmationDTO;
-import com.sivalabs.bookstore.webapp.clients.orders.OrderDTO;
-import com.sivalabs.bookstore.webapp.clients.orders.OrderServiceClient;
-import com.sivalabs.bookstore.webapp.clients.orders.OrderSummary;
-import com.sivalabs.bookstore.webapp.services.SecurityHelper;
+import com.giri.bookstore.webapp.clients.orders.CreateOrderRequest;
+import com.giri.bookstore.webapp.clients.orders.OrderConfirmationDTO;
+import com.giri.bookstore.webapp.clients.orders.OrderDTO;
+import com.giri.bookstore.webapp.clients.orders.OrderServiceClient;
+import com.giri.bookstore.webapp.clients.orders.OrderSummary;
+import com.giri.bookstore.webapp.services.SecurityHelper;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.Map;

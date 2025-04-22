@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.webapp.clients.orders;
+package com.giri.bookstore.webapp.clients.orders;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

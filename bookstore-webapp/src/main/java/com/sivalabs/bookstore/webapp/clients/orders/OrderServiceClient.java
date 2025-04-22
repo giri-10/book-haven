@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.webapp.clients.orders;
+package com.giri.bookstore.webapp.clients.orders;
 
 import java.util.List;
 import java.util.Map;

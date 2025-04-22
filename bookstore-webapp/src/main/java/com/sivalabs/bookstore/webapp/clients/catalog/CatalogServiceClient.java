@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.webapp.clients.catalog;
+package com.giri.bookstore.webapp.clients.catalog;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

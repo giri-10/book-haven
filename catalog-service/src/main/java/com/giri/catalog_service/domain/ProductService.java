@@ -24,7 +24,7 @@ public class ProductService {
     public PagedResult<Product> getProducts(int pageNo) {
         Sort sort = Sort.by("name").ascending();
         pageNo = pageNo <= 1 ? 0 : pageNo - 1;
-        Pageable pageable = PageRequest.of(pageNo, 10, sort);
+        Pageable pageable = PageRequest.of(pageNo, properties.pageSize(), sort);
         Page<Product> productsPage = productRepo.findAll(pageable).map(ProductMapper::toProduct);
 
         return new PagedResult<>(

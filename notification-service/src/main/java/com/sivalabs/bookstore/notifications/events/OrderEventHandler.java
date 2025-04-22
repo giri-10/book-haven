@@ -1,12 +1,12 @@
-package com.sivalabs.bookstore.notifications.events;
+package com.giri.bookstore.notifications.events;
 
-import com.sivalabs.bookstore.notifications.domain.NotificationService;
-import com.sivalabs.bookstore.notifications.domain.OrderEventEntity;
-import com.sivalabs.bookstore.notifications.domain.OrderEventRepository;
-import com.sivalabs.bookstore.notifications.domain.models.OrderCancelledEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderCreatedEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderDeliveredEvent;
-import com.sivalabs.bookstore.notifications.domain.models.OrderErrorEvent;
+import com.giri.bookstore.notifications.domain.NotificationService;
+import com.giri.bookstore.notifications.domain.OrderEventEntity;
+import com.giri.bookstore.notifications.domain.OrderEventRepository;
+import com.giri.bookstore.notifications.domain.models.OrderCancelledEvent;
+import com.giri.bookstore.notifications.domain.models.OrderCreatedEvent;
+import com.giri.bookstore.notifications.domain.models.OrderDeliveredEvent;
+import com.giri.bookstore.notifications.domain.models.OrderErrorEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

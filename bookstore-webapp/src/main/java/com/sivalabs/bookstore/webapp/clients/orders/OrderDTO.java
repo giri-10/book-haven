@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.webapp.clients.orders;
+package com.giri.bookstore.webapp.clients.orders;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package com.sivalabs.bookstore.notifications.domain;
+package com.giri.bookstore.notifications.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
