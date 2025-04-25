@@ -3,24 +3,24 @@ package com.giri.order_service.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.giri.order_service.ApplicationProperties;
 import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
 
 @Configuration
 public class RabbitMQConfig {
     private final ApplicationProperties properties;
 
-    RabbitMQConfig(ApplicationProperties properties){
+    RabbitMQConfig(ApplicationProperties properties) {
         this.properties = properties;
     }
 
     @Bean
-    DirectExchange exchange()  {
+    DirectExchange exchange() {
         return new DirectExchange(properties.orderEventsExchange());
     }
 
@@ -30,13 +30,13 @@ public class RabbitMQConfig {
     }
 
     @Bean
-    Queue deliverOrdersQueue() {
-        return QueueBuilder.durable(properties.deliverOrdersQueue()).build();
+    Queue deliverOrdersQueue() { // This method name matches what's in the error
+        return QueueBuilder.durable(properties.deliveredOrdersQueue()).build();
     }
 
     @Bean
     Binding deliveredOrdersQueueBinding() {
-        return BindingBuilder.bind(deliverOrdersQueue()).to(exchange()).with(properties.deliverOrdersQueue());
+        return BindingBuilder.bind(deliverOrdersQueue()).to(exchange()).with(properties.deliveredOrdersQueue());
     }
 
     @Bean
