@@ -1,7 +1,7 @@
 name: 'bookhaven'
 services:
   catalog-service:
-    image: giri/bookstore-catalog-service
+    image: giri19/bookhaven-catalog-service
     container_name: catalog-service
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -25,7 +25,7 @@ services:
       logging: "promtail"
 
   order-service:
-    image: giri/bookstore-order-service
+    image: giri19/bookhaven-order-service
     container_name: order-service
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -57,7 +57,7 @@ services:
       logging: "promtail"
 
   # notification-service:
-  #   image: giri/bookstore-notification-service
+  #   image: giri19/bookhaven-notification-service
   #   container_name: notification-service
   #   environment:
   #     - SPRING_PROFILES_ACTIVE=docker
@@ -90,7 +90,7 @@ services:
   #     logging: "promtail"
 
   # api-gateway:
-  #   image: giri/bookstore-api-gateway
+  #   image: giri19/bookhaven-api-gateway
   #   container_name: api-gateway
   #   environment:
   #     - SPRING_PROFILES_ACTIVE=docker
@@ -109,8 +109,8 @@ services:
   #     logging: "promtail"
 
   # bookstore-webapp:
-  #   image: giri/bookstore-webapp
-  #   container_name: bookstore-webapp
+  #   image: giri19/bookhaven-webapp
+  #   container_name: bookhaven-webapp
   #   environment:
   #     - SPRING_PROFILES_ACTIVE=docker
   #     - BOOKSTORE_API_GATEWAY_URL=http://api-gateway:8989
