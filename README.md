@@ -19,5 +19,3 @@ mvn spring-boot:run (cd Desktop/book-haven)
 to build the catalog-service docker image
 mvn -pl catalog-service spring-boot:build-image -DskipTests
 (Run in docker terminal, cd Desktop/book-haven)
-
-To 
