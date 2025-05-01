@@ -1,9 +1,17 @@
 package com.giri.order_service.web.controllers;
 
-import org.apache.catalina.servlets.DefaultServlet.SortManager.Order;
-import org.hibernate.validator.internal.util.logging.LoggerFactory;
+import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.http.HttpStatus;
+import com.giri.order_service.domain.OrderService;
+import com.giri.order_service.domain.SecurityService;
+import com.giri.order_service.domain.models.CreateOrderRequest;
+import com.giri.order_service.domain.models.CreateOrderResponse;
+
+import jakarta.validation.Valid;
 
 class OrderController {
               private static final Logger log = LoggerFactory.getLogger(OrderController.class);
@@ -17,7 +25,7 @@ class OrderController {
               }
 
 
-              @PostMapping("/orders")
+              @PostMapping
               @ResponseStatus(HttpStatus.CREATED)
               CreateOrderResponse createOrder(@Valid @RequestBody CreateOrderRequest request )
               {
