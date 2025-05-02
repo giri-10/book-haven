@@ -5,7 +5,7 @@ System Design:
 ![architecture](https://github.com/user-attachments/assets/41ccf70c-d04d-4663-a0b3-0f9dd5f1c3b6)
 
 
-Commands for running the application:
+Useful commands:
 
 To install the dependencies, <br>
 mvn clean install (cd Desktop/book-haven)
